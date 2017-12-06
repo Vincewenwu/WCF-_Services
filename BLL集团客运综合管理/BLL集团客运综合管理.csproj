@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC5E3072-32B8-4696-84EE-9FA1CE3BE8C4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL集团客运综合管理</RootNamespace>
+    <AssemblyName>BLL集团客运综合管理</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BiIIEnterlibraryManager\FRM_PiaoJuChuKu.cs" />
+    <Compile Include="BiIIEnterlibraryManager\FRM_PiaoJuChuKu_Insert.cs" />
+    <Compile Include="BiIIEnterlibraryManager\FRM_PiaoJuChuKu_Update.cs" />
+    <Compile Include="BiIIEnterlibraryManager\FRM_PiaoJuRuKu.cs" />
+    <Compile Include="BiIIEnterlibraryManager\FRM_PiaoJuRuKu_Insert.cs" />
+    <Compile Include="CampseizedmoneyManager\Campseizedmoneyguanli.cs" />
+    <Compile Include="chuzhanjicha\chezhanjicha.cs" />
+    <Compile Include="ClassesManage\FRM_BaoBanGuanLi.cs" />
+    <Compile Include="DispatchingManagement\Dispatchingmanagement.cs" />
+    <Compile Include="FrequencyManager\FrequencyListManager.cs" />
+    <Compile Include="FrequencyManager\NEWFrequencyInsect.cs" />
+    <Compile Include="FrequencyManager\NEWFrequencyUpdate.cs" />
+    <Compile Include="InspectTicketManager\FRM_JianPiaoXiTong.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rrepoter\RepoterCheLIng.cs" />
+    <Compile Include="SeaseTicket\TicketSease.cs" />
+    <Compile Include="UserManager\FRM_YonHuGuanLi.cs" />
+    <Compile Include="UserManager\FRM_YonHuGuanLi_Insert.cs" />
+    <Compile Include="UserManager\FRM_YonHuGuanLi_Update.cs" />
+    <Compile Include="UserManager\FRM_YonHuQuanXianGuanLi.cs" />
+    <Compile Include="USRE\USER-DENGLU.cs" />
+    <Compile Include="VehicleManage\FRM_CheLiangGuangLi.cs" />
+    <Compile Include="VehicleManage\FRM_CheLiangGuangLi_Insert.cs" />
+    <Compile Include="VehicleManage\FRM_CheLiangGuangLi_Update.cs" />
+    <Compile Include="VehicleManage\FRM_JiaShiYuanGuanLi.cs" />
+    <Compile Include="VehicleManage\FRM_JiaShiYuanGuanLi_Insert.cs" />
+    <Compile Include="VehicleManage\FRM_JiaShiYuanGuanLi_Update.cs" />
+    <Compile Include="VehicleManage\FRM_JiaShiYuanXinXi.cs" />
+    <Compile Include="进站检查\Jinzhanjiancha.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DALPublic\DALPublic.csproj">
+      <Project>{6e36c27e-b7c5-40dd-b5d0-f0733c5a25ca}</Project>
+      <Name>DALPublic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
